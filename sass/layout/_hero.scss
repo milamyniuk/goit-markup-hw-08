@@ -46,7 +46,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      -webkit-image-set(url(../../images/hero_section/hero_tablet_1x.jpg) 1x, url(../../images/hero_section/hero_tablet_2x.jpg)
+      -webkit-image-set(url(.././images/hero_section/hero_tablet_1x.jpg) 1x, url(../../images/hero_section/hero_tablet_2x.jpg)
             2x);
   }
 }
@@ -62,7 +62,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero_section/hero_default_size.jpg);
+      url(.././images/hero_section/hero_default_size.jpg);
   }
 }
 .container-hero {
