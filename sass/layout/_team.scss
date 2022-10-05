@@ -1,0 +1,124 @@
+@media screen and (max-width: 767px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .team-picture {
+    width: 450px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .list-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .team-picture {
+    width: 354px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-wrapper {
+    flex-wrap: nowrap;
+  }
+  .team-picture {
+    width: 270px;
+  }
+  .team {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-second-bg-color);
+
+  align-items: center;
+}
+.team-description {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-bg-color);
+
+  align-items: center;
+  padding: 30px;
+  border-radius: 0px 0px 4px 4px;
+}
+.team-description__names {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: var(--main-spacing);
+  color: var(--main-text-color);
+
+  margin-bottom: 10px;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.social-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--main-bg-color);
+  fill: #afb1b8;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-dur-and-func);
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    fill: #afb1b8;
+  }
+
+  &:focus {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    fill: #afb1b8;
+  }
+}
+
+.social-list__link:hover .social-list__icon {
+  fill: #ffffff;
+}
+
+.social-list__link:focus .social-list__icon {
+  fill: #ffffff;
+}
+.team-description__position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: var(--main-spacing);
+  color: var(--p-text-color);
+  margin-bottom: 16px;
+}
+
+.social-list__icon:hover {
+  fill: var(--primary-color);
+}

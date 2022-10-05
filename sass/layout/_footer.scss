@@ -1,0 +1,211 @@
+@media screen and (max-width: 767px) {
+  .footer {
+    background-color: var(--secondary-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-icons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+  }
+  .subscribe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+  }
+
+  .email-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .email-form__input {
+    width: 450px;
+  }
+  .button-submit-container {
+    margin-top: 20px;
+  }
+}
+
+.footer-icons-heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: var(--main-spacing);
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+  margin-bottom: 20px;
+}
+.social-list-link-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: var(--primary-color);
+  }
+  &:hover .social-list-icon {
+    fill: var(--main-bg-color);
+  }
+}
+
+.social-list__icon-footer {
+  fill: var(--main-bg-color);
+}
+
+.subscribe-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+  margin-bottom: 20px;
+}
+
+.email-form__input {
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 16px;
+  color: var(--main-bg-color);
+
+  &::placeholder {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.subscribe-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+  padding-left: 28px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: var(--primary-color);
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--main-bg-color);
+  margin-left: 12px;
+}
+
+.button-send-icon {
+  margin-left: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    align-content: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .footer-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+  .footer-container__left {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-icons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 70px;
+  }
+  .footer-icons-heading {
+    align-self: center;
+  }
+  .subscribe-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .email-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .email-form__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .subscribe-container {
+    margin-left: 93px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 0px; ///
+  }
+  .footer-icons-heading {
+    align-self: baseline;
+  }
+  .email-form {
+    display: flex;
+    flex-direction: row;
+  }
+  .email-form__input {
+    width: 358px;
+  }
+}

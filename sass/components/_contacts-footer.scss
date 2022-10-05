@@ -1,0 +1,91 @@
+@media screen and (max-width: 767px) {
+  .list-footer {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /*here is full code*/
+  .list-footer {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+  }
+
+  .list-footer__list-address-item:nth-child(n) {
+    margin-bottom: 9px;
+  }
+
+  .address-footer-container {
+    margin-top: 20px;
+  }
+
+  .address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: var(--main-spacing);
+    color: var(--main-bg-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .list-footer__contact-details-footer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: var(--main-spacing);
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+      color: var(--primary-color);
+    }
+  }
+}
+
+.list-footer__list-address-item:nth-child(n) {
+  margin-bottom: 9px;
+}
+
+.address-footer-container {
+  margin-top: 20px;
+}
+
+.address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: var(--main-spacing);
+  color: var(--main-bg-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.list-footer__contact-details-footer {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: var(--main-spacing);
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-color);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-footer {
+    align-items: baseline;
+  }
+}
